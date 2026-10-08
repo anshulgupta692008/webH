@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            color: white;
+        }
+        #parent{
+            height: 90%vh;
+            border: 2px solid;
+             display: grid; 
+             grid-template-columns: 180px 110px 50px 150px;  
+             grid-template-rows: 150px 50px 50px 160px;
+             /* grid-template-columns: repeat(3, 1fr); */
+             gap: 10px;
+        }
+        .oo{
+            border: 2px;
+         transition: 3s;
+         border-radius: 10%;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            border-radius: 10%;
+            cover:fit;
+        } 
+        .oo:hover{
+            transform: scale(1.2);
+        }
+        h1:hover{
+            transition- obacity 
+              }
+        h1{
+            bac-color:white;
+        }
+        #one{
+            ;
+            grid-row:1/2;
+         }
+          #two{
+            grid-row: 1/1;  
+            grid-column:2/1;  
+             }
+          #three{
+           grid-row:1/2; 
+         }
+         h6{
+             opacity:1;
+             transition:0.5s;
+         }
+         h6:hover{
+            transform:translateY(-20px);
+            opacity: 0;
+         }
+         .oo:nth-child(1){
+            grid-column: span 2;
+            grid-row:  span 3;
+         }
+         .oo:nth-child(4){
+            grid-column: span 1;
+            grid-row:  span 4;
+         }
+            
+           
+         
+         
+         
+
+    </style>
+</head>
+<body bgcolor="black">
+    <div id="heading">
+        <h5 style="margin: 0px; font-size: 12px;">MY COLLECTION</h5>
+        <h1 style="margin: 0px; font-size: 40px;" bold>Moments.</h1>
+        <h5 style="margin: 0px ;margin-bottom: 20px;">A collection of places, people and memories</h5>
+    </div> 
+    <div id="parent"> 
+        <div id="one" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""><h6>break</h6></div>
+        <div id="two" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt="">bre</div>
+        <div id="three" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt="">jf3</div>
+        <div id="four" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+        <div id="five" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+        <div id="six" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+        <div id="seven" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+        <div id="eight" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+        <div id="nine" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""><v/div> 
+         <div id="ten" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div> 
+         <!-- <div id="ni" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""><v/div>  -->
+    </div>
+</body>
+</html>

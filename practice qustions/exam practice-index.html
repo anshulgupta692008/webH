@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>div and span</title>
+</head>
+<body>
+<!-- The style attribute is covered in CSS Basics; here it only makes the boxes visible -->
+<div style="background-color: lightblue; padding: 10px;">
+<h2>Section 1</h2>
+<p>This div groups a heading and a paragraph.</p>
+</div>
+<div style="background-color: lightgreen; padding: 10px;">
+<h2>Section 2</h2>
+<p>Price: <span style="color: red; font-weight: bold;">Rs. 499</span> only.</p>
+</div>
+<!-- Block vs inline -->
+<div style="border: 2px solid black;">div 1</div>
+<div style="border: 2px solid black;">div 2</div>
+<span style="border: 2px solid red;">span 1</span>
+<span style="border: 2px solid red;">span 2</span>
+</body>
+</html>
+
+
+
+
+<hr><hr>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+<h2>Student Registration</h2>
+<form action="/register" method="POST" enctype="multipart/form-data">
+<-- Text inputs -->
+<!-- <label for="name">Full Name:</label>
+<input type="text" id="name" name="fullname" placeholder="Enter your name" required>
+<br><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<br><br>
+<label for="pass">Password:</label>
+<input type="password" id="pass" name="password" minlength="6">
+<br><br>
+<label for="age">Age:</label>
+<input type="number" id="age" name="age" min="16" max="60">
+<br><br>
+<label for="dob">Date of Birth:</label>
+<input type="date" id="dob" name="dob">
+<br><br> -->
+<!-- Radio: same name = only one can be selected -->
+<!-- <p>Mode of class:</p>
+<input type="radio" id="online" name="mode" value="online">
+<label for="online">Online</label>
+<input type="radio" id="offline" name="mode" value="offline" checked>
+<label for="offline">Offline</label>
+<br><br> -->
+<!-- Checkbox: many can be selected -->
+<!-- <p>Skills:</p>
+<input type="checkbox" id="html" name="skills" value="html">
+<label for="html">HTML</label>
+<input type="checkbox" id="css" name="skills" value="css">
+<label for="css">CSS</label>
+<input type="checkbox" id="js" name="skills" value="js">
+<label for="js">JavaScript</label>
+<br><br> -->
+<!-- Dropdown -->
+<!-- <label for="city">City:</label>
+<select id="city" name="city">
+<option value="">-- Select --</option>
+<option value="delhi">Delhi</option>
+<option value="mumbai">Mumbai</option>
+<option value="bengaluru">Bengaluru</option>
+</select>
+<br><br> -->
+<!-- Multi-line text -->
+<!-- <label for="about">About you:</label><br>
+<textarea id="about" name="about" rows="4" cols="40"></textarea>
+<br><br> -->
+<!-- File upload -->
+<!-- <label for="photo">Photo:</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+<br><br> -->
+<!-- Buttons -->
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+</form><input type="checkbox" id="css" name="skills" value="css">
+<label for="css">CSS</label>
+<input type="checkbox" id="js" name="skills" value="js">
+<label for="js">JavaScript</label>
+<br><br>
+<!-- Dropdown -->
+<label for="city">City:</label>
+<select id="city" name="city">
+<option value="">-- Select --</option>
+<option value="delhi">Delhi</option>
+<option value="mumbai">Mumbai</option>
+<option value="bengaluru">Bengaluru</option>
+</select>
+<br><br>
+Multi-line text
+<label for="about">About you:</label><br>
+<textarea id="about" name="about" rows="4" cols="40"></textarea>
+<br><br>
+<!-- File upload -->
+<label for="photo">Photo:</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+<br><br>
+<!-- Buttons -->
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+</form>
+</form>
+</fieldset>
+</body>
+</html> -->
+
+
+<hr><hr>
+
+
+table.html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tables</title>
+</head>
+<body>
+<table border ="1" cellpadding="8">
+<caption>Weekly Timetable</caption>
+<thead>
+<tr>
+<th>Day</th>
+<th>10:00 - 11:00</th>
+<th>11:00 - 12:00</th>
+<th>12:00 - 01:00</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>HTML</td>
+<td>CSS</td>
+<td rowspan="2">Lunch</td> <!-- covers Monday and Tuesday -->
+</tr>
+<tr>
+<td>Tuesday</td>
+<td colspan="2">JavaScript Lab</td> <!-- covers 2 time slots -->
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="4">Lab sessions run for two continuous periods.</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div, span {
+background-color: navy;
+color: white;
+margin: 5px;
+padding: 10px;
+}
+.as-block {
+display: block;
+width: 200px;
+height: 40px;
+}
+.as-inline {
+display: inline;
+width: 200px; /* ignored for inline */
+height: 40px; /* ignored for inline */
+}
+.as-inline-block {
+display: inline-block;
+width: 200px;
+height: 40px;
+}
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+</style>
+</head>
+<body>
+<h3>block (span changed to block)</h3>
+<span class="as-block">Block 1</span>
+<span class="as-block">Block 2</span>
+<h3>inline (div changed to inline)</h3>
+<div class="as-inline">Inline 1</div>
+<div class="as-inline">Inline 2</div>
+<h3>inline-block</h3>
+<div class="as-inline-block">Inline-block 1</div>
+<div class="as-inline-block">Inline-block 2</div>
+<h3>display: none (top row) vs visibility: hidden (bottom row)</h3>
+<div class="as-inline-block">A</div>
+<div class="as-inline-block hidden">B</div>
+<div class="as-inline-block">C</div>
+<br>
+<div class="as-inline-block">A</div>
+<div class="as-inline-block invisible">B</div>
+<div class="as-inline-block">C</div>
+</body>
+</html>

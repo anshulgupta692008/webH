@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   body{
+          
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #parent{
+              height: 100%;
+            width: 100%;
+       
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            gap: 17px;
+            margin: 350px auto;
+        }
+      .qwe{
+         height: 100px;
+            width: 100px;
+        
+            border-radius: 50%;
+            animation:   bounce alternate 1s  ease-in-out infinite;
+      }
+      .qwe:nth-child(1){
+    background: linear-gradient(rgb(142, 0, 251),rgb(163, 134, 169));
+      } 
+      .qwe:nth-child(2){
+    background: linear-gradient(rgb(228, 248, 11),rgb(188, 195, 144));
+    animation-delay: 0.2s;
+      } 
+      
+      .qwe:nth-child(3){
+    background: linear-gradient(rgb(251, 0, 0),rgb(253, 117, 117));
+    animation-delay: 0.4s;
+      }
+
+      @keyframes bounce {
+        0%{
+            transform: translateY(0) scale(1);
+            opacity: 0.5;
+        }
+        50%{
+            transform: translateY(-40px) scale(1.1);
+        }
+        100%{
+            transform: translateY(0) scale(1);
+        }
+      }   
+ </style>
+</head>
+<body>
+    <div id="parent">
+    <div class="qwe" id="one"></div>
+    <div class="qwe" id="two"></div>
+    <div class="qwe" id="three"></div>
+    </div>
+</body>
+</html>

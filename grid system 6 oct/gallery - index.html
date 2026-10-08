@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 90vh;
+            border: 2px solid brown;
+             display: grid; 
+             /* grid-template-columns: 400px 400px 390px;  */
+             /* grid-template-rows: 150px 150px 150px; */
+             grid-template-columns: repeat(3, 1fr);
+             gap: 10px;
+        }
+        .oo{
+            border: 2px solid brown;
+         transition: 3s;
+        }
+        /* img{
+            height: 100%;
+            width: 100%;
+        } */
+        /* .oo:hover{
+            transform: scale(1.2);
+        } */
+         #one{
+            background-color: aqua;
+            grid-row-start: 3;
+            grid-row-end:4
+            grid-column : 2/3;
+         }
+          #two{
+            background-color: yellow;
+         }
+          #three{
+            background-color: rgb(131, 148, 44);
+         }
+          #four{
+            background-color: rgb(49, 14, 250);
+         }
+          #five{
+            background-color: rgb(219, 29, 181);
+         }
+          #six{
+            background-color: rgb(205, 16, 19);
+         }
+          #seven{
+            background-color: rgb(255, 166, 0);
+         }
+          #eight{
+            background-color: rgb(147, 71, 71);
+         }
+          #nine{
+            background-color: rgb(18, 208, 59);
+         }
+         
+
+
+    </style>
+
+</head>
+<body>
+    <div id="parent">
+    
+    <!-- <div id="one" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="two" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="three" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="four" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="five" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="six" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="seven" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="eight" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""></div>
+    <div id="nine" class="oo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBMu1crC6yql6I3rpnF2vc5x559oWjZKFyeFhEE0_1SQ&s=10" alt=""><v/div> -->
+    <div id="one" class="oo">1</div>
+    <div id="two" class="oo">2</div>
+    <div id="three" class="oo">3</div>
+    <div id="four" class="oo">4</div>
+    <div id="five" class="oo">5</div>
+    <div id="six" class="oo">6</div>
+    <div id="seven" class="oo">7</div>
+    <div id="eight" class="oo">8</div>
+    <div id="nine". class="oo">9</div>
+    </div>
+</body>
+</html>

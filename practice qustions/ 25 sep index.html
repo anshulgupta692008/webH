@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        #main{
+            height:500px auto;
+            width: 1000px;
+            border: 3px solid;    
+        }
+        .oo{
+            height: 100px;
+            width: 100px;
+            border : 1px solid;     
+            transition-duration: 3s;       
+        }
+       #main:hover .oo{
+         margin-left: 900px;
+         transform:rotate(36000000deg);
+
+        }
+        #one{
+            background-color: rgb(0, 255, 255);
+            transition-timing-function: ease-in;
+        }
+        #two{
+            background-color: rgb(74, 251, 192);
+            transition-timing-function:ease-in-out
+        }
+        #three{
+            background-color: rgb(142, 235, 28);
+            transition-timing-function:ease-out
+        }
+        #four{
+            background-color: blueviolet;
+            transition-timing-function:ease-in
+        }
+        #five{
+            background-color: burlywood;
+            transition-timing-function:ease-in
+        }
+
+
+        
+
+         
+    </style>
+</head>
+<body>
+    <div id="main"   >
+
+        <div id="one" class="oo"></div>
+        <div id="two" class="oo"></div>
+        <div id="three" class="oo"></div>
+        <div id="four" class="oo"></div>
+        <div id="five" class="oo"></div>
+
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div, span {
+background-color: rgb(1, 1, 88);
+color: white;
+margin: 5px;
+padding: 10px;
+}
+.as-block {
+display: block;
+width: 200px;
+height: 40px;
+}
+.as-inline {
+display: inline;
+width: 200px; /* ignored for inline */
+height: 40px; /* ignored for inline */
+}
+.as-inline-block {
+display: inline-block;
+width: 200px;
+height: 40px;
+}
+.hidden { display: none; }
+.invisible { visibility: hidden; }
+</style>
+</head>
+<body>
+<h3>block (span changed to block)</h3>
+<span class="as-block">Block 1</span>
+<span class="as-block">Block 2</span>
+<h3>inline (div changed to inline)</h3>
+<div class="as-inline">Inline 1</div>
+<div class="as-inline">Inline 2</div>
+<h3>inline-block</h3>
+<div class="as-inline-block">Inline-block 1</div>
+<div class="as-inline-block">Inline-block 2</div>
+<h3>display: none (top row) vs visibility: hidden (bottom row)</h3>
+<div class="as-inline-block">A</div>
+<div class="as-inline-block hidden">B</div>
+<div class="as-inline-block">C</div>
+<br>
+<div class="as-inline-block">A</div>
+<div class="as-inline-block invisible">B</div>
+<div class="as-inline-block">C</div>
+</body>
+</html>
+

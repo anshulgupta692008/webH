@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height:500px;
+            width:400px;
+            background-color: rgb(247, 69, 99);
+            margin: 80px auto;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .oo{
+            height:100px;
+            width:400px;
+            background-color:rgb(130, 167, 251);
+            border :1px solid rgb(249, 242, 242);
+            transition: 400ms;
+            display:flex;
+            align-items :center ;
+            
+        }
+        .oo:hover{
+            transform: translateX(8px);
+            letter-spacing:3px ;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div class="oo">book a test drive</div>
+        <div class="oo">book a test drive</div>
+        <div class="oo">book a test drive</div>
+        <div class="oo">book a test drive</div>
+        <div class="oo">book a test drive</div>
+    </div>
+</body>
+</html>

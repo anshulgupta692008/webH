@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     *{
+        margin:0px;
+        padding:0px;
+     }
+     h1{
+       background-color:black;
+       text-align: center;
+       color:aqua;
+     }h3{
+        background-color:black;
+        text-align: center;
+        color:rgb(121, 211, 246);
+     }
+     div{
+        height:100px;
+        width:100px
+        display:inlineblock;
+     }
+     #card{
+        height:250px;
+        width:200px;
+        background-color: aliceblue;
+        border: 3px solid rgb(3, 3, 230);
+        text-align:center;
+        margin: 100px;
+        padding-top: 5px;
+        position: relative;
+     }
+     button{
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+     }
+     #head{
+        height: 250px;
+        width: 220px;
+        background-color: rgb(254, 232, 204);
+        border:3px solid yellow;
+        text-align: center;
+        margin-left: 100px;
+        padding-top: 16px;
+        position:absolute;
+        bottom:360px;
+        left:260px;
+        top:150px;
+     }
+     #game{
+        height:250px;
+        width:200px;
+        background-color: rgb(200, 249, 128);
+        border:3px solid rgb(52, 178, 52);
+        text-align: center;
+        position: absolute;
+        margin-left: 100 px;
+        padding-top: 16px;
+        bottom:250px; 
+        right:200px;
+        top:145px;
+    left:650px;
+     }
+    </style>
+</head>
+<body bgcolor=" lightgrey">
+    <nev>
+     <h1>My Product Store</h1>
+     <h3>Best Product at Best Prices</h3>
+    </nev>
+    <div id="one">
+        <div id="card">
+         <h2>Smart Watch</h3>
+         <br> 
+         <h5>Stylish smart watch with fitness tracking and notification</h5>
+         <br>
+         <h2>₹999</h2>
+         <br>
+         <button>Bay Now</button>
+        </div>
+   </div>
+    <div id="two">
+        <div id="head">
+            <h2>Wireless Headphone</h2>
+            <br>
+            <h5>enjoy high quality music with wireless headphone</h5>
+            <br><br>
+            <h2>₹499</h2>
+            <br><br>
+            <button>Bay Now</button>
+        </div>
+    </div>
+    <div id="three">
+        <div id="game">
+            <h2>Gaming Mouse</h2>
+            <br>
+            <h5>Fast and Comfortable gaming mouse for games</h5>
+            <br>
+            <h2>₹1999</h2>
+            <br><br>
+            <button>Bay now</button>
+
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* tall page so that we can scroll */
+body { height: 2000px; font-family: Arial, sans-serif; }
+.box { width: 160px; padding: 10px; color: white; }
+.static { position: static; background: gray; top: 50px; } /* top is ignored */
+.relative { position: relative; background: blue; top: 20px; left: 40px; }
+.parent {
+position: relative; /* reference point for the absolute child */
+width: 400px;
+height: 200px;
+border: 3px solid black;
+margin-top: 40px;
+}
+.absolute { position: absolute; background: red; bottom: 10px; right: 10px; }
+.fixed { position: fixed; background: green; top: 10px; right: 10px; z-index: 10; }
+.sticky { position: sticky; background: purple; top: 0; }
+</style>
+</head>
+<body>
+<div class="box fixed">Fixed: always top-right</div>
+<div class="box static">Static (default)</div>
+<div class="box relative">Relative: 20px down, 40px right</div>
+<div class="parent">
+Parent (position: relative)
+<div class="box absolute">Absolute: bottom-right of parent</div>
+</div>
+<div class="box sticky">Sticky: sticks at top on scroll</div>
+<p>Scroll down to see fixed and sticky in action.</p>
+</body>
+</html>

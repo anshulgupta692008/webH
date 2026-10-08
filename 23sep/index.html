@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 900px;
+        }
+       
+        #main{
+            height: 600px;
+            width: 400px;
+            margin: 50px auto;
+            position: relative;
+            transition: 4s;
+            transform-style: preserve-3d;
+
+        }
+        #main:hover{
+            transform: rotateY(180deg);
+        }
+        #card-a{
+            height: 50%;
+            width: 100%;
+            background-color: aqua;
+            position: absolute;
+          z-index:1;
+            backface-visibility: hidden;
+        }
+        #card-b{
+            height: 50%;
+            width: 100%;
+            background-color: antiquewhite;
+            position: absolute;
+            transform: rotateY(180deg);
+  
+
+        }
+    
+        
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="card-a">card-a</div>
+        <div id="card-b"><img height="100%" width="100%" src="https://cdn.britannica.com/05/6005-050-3B7DA6D7/Farm-coast-Azores-Sao-Jorge-Island.jpg">
+        </div>
+    </div>
+</body>
+</html>
