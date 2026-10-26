@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+           height:100vh;
+           width:100vw;
+           background-color: blueviolet;
+        }
+        @media screen and (min-width:800px) {
+            div{
+                background-color: rgb(241, 137, 11);
+                border-radius: 50%;
+            }
+        } */
+
+     *{
+        margin: 0px;
+        padding: 0px;
+    }
+    nav{
+        width: 100vw;
+        background-color: antiquewhite;
+        display:flex;
+        justify-content: space-between;
+    }
+    .oo{
+        color: black;   
+        display: flex;
+        margin: 10px;
+        width:300px;
+        justify-content: space-between;
+    }
+    .ooo{
+        display: flex;
+    }
+@media screen  and (max-width:400px){
+    nav{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: auto;
+    }
+    .oo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    </style>
+</head>
+<body>
+   <nav>
+    <div class="oo">
+    <div >Navbar</div>
+    <div>Home</div>
+    <div>link</div>
+    <div>dropdown</div>
+    </div>
+    <div class="ooo">
+        <input type=" search">search
+    </div>
+   </nav>
+</body>
+</html>
